@@ -1,0 +1,55 @@
+
+1. #Traer las entidades
+SELECT distinct ?superClass
+ WHERE {
+   ?subclass rdfs:subClassOf ?superClass .
+} 
+
+
+2. #Traer objeto en específico
+SELECT DISTINCT ?nombre ?direccion ?horario ?Geo_Json ?calificacion ?comentarios
+ WHERE {
+     ?s rdf:type ?object.
+  	 ?s :nombre ?nombre .
+     ?s :direccion ?direccion .
+  	 ?s :horario ?horario .
+     ?s :Geo_Json ?Geo_Json .
+     ?s :calificacion ?calificacion .
+     ?s :comentarios ?comentarios .
+  FILTER (REGEX(str(?object),"iglesia","i")).
+}
+
+
+
+3. #Traer los objetos y sus relaciones
+SELECT DISTINCT ?nombre ?direccion ?horario ?calificacion ?comentarios ?o
+ WHERE {
+     ?s rdf:type ?object.
+  	 ?s :nombre ?nombre .
+     ?s :direccion ?direccion .
+  	 ?s :horario ?horario .
+     ?s :calificacion ?calificacion .
+     ?s :comentarios ?comentarios .
+  optional { ?s :brindan ?o } .
+  optional { ?s :esta ?o } .
+  optional { ?s :posee ?o } .
+  optional { ?s :Ttiene ?o } .
+  FILTER (REGEX(str(?object),"Aeropu","i")).
+}
+
+4. #Traer la cantidad subclases de la Clase Compras
+SELECT (count(distinct ?s) as ?count)
+	WHERE { ?s rdfs:subClassOf :compras .
+}
+
+
+5. #Traer las subclases de la Clase Actividad
+SELECT *
+	WHERE { ?s rdfs:subClassOf :actividades .
+}
+
+-----------------
+SELECT DISTINCT ?subject
+	    WHERE { 
+            ?subject rdfs:subClassOf :puntos_interes.
+        }

@@ -1,0 +1,1104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14"
+     xml:base="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14">
+        <rdfs:comment>Ontología aplicada para puntos de interés como objetivos turísticos en Florencia - Caquetá</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Ttiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Ttiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#brindan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#brindan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#esta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#esta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#posee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#posee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Geo_Json -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Geo_Json">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#calificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comentarios -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comentarios">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#direccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#direccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#horario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#horario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#aeropuerto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#aeropuerto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#balneario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#balneario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#banco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#banco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#actividades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#entidades_financieras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#galeria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#galeria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#compras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hospedaje -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hospedaje">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hoteles_Hospedajes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#iglesia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#iglesia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#museo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#museo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cultura_religion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#comidas_bebidas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#terminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#terminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#puntos_interes"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Aeropuerto_Gustavo_Artunduaga_Paredes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Aeropuerto_Gustavo_Artunduaga_Paredes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#aeropuerto"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota_aeropuerto"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_aeropuerto"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto2"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.5935447295365581, -75.56170368911422]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>284</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>HCQQ+MP Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Aeropuerto Gustavo Artunduaga Paredes</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Balneario_Villa_Marta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Balneario_Villa_Marta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#balneario"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Balneario_el_Tigre"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6605955785637714, -75.61188548155253]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>12</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Via Neiva</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>09:00 - 19:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Balneario Villa Marta</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Balneario_el_Tigre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Balneario_el_Tigre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#balneario"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.617617287028705, -75.66454641000168]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,8</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>12</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Via morelia</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Balneario el Tigre</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_Bancolombia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_Bancolombia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#banco"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_Davivienda"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_de_la_Republica"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6144271328785622, -75.61371034196107]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>1</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 14 ## 12-15, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Bancolombia</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_Davivienda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_Davivienda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#banco"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_de_la_Republica"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6145459719502175, -75.61307797432887]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,6</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>8</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>a 11-115, Cl. 14 #111, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Davivienda</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_de_la_Republica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Banco_de_la_Republica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#banco"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6154086384921273, -75.6128658094857]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,8</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>6</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion># a 14-100,, Cra. 11 #142, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Banco de la Republica</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_BAKU_DISCO_BAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_BAKU_DISCO_BAR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_El_Mirador"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_THE_ROCK_CENTER"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6104940948315285, -75.60748953102971]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>215</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>a 6-90,, Cra. 11 #62, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 03:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>BAKÙ DISCO BAR</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_El_Mirador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_El_Mirador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_THE_ROCK_CENTER"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6150221626442403, -75.59319068896119]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>297</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Vía al Mirador, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>El Mirador</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_THE_ROCK_CENTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Bar_THE_ROCK_CENTER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.610335679600928, -75.60683328676674]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,6</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>356</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>ZONA ROSA, Cra. 10a #6-36, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>19:00 - 01:45</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>THE ROCK CENTER</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_ATH_Florencia_V_-_Banco_Popular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_ATH_Florencia_V_-_Banco_Popular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6161336899576793, -75.61307652966849]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>2</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra. 11 #15-55, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Cajero ATH Florencia V - Banco Popular</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6143669746420402, -75.61412779003906]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>1</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>KR 3 A BIS # 21 A 4 D LOCAL 212, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Cajero Automático Banco de Bogotá</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota_aeropuerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Automatico_Banco_de_Bogota_aeropuerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.5935447295365581, -75.56170368911422]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4,6</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCQQ+MP Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cajero Automatico Banco de Bogota Aeropuerto</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6146855709813595, -75.61324638560082]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>2</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 14 #11-53, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Cajero BBVA</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_Terminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_Terminal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4,6</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">76</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cajero BBVA Terminal</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_aeropuerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_aeropuerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.5935447295365581, -75.56170368911422]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCQQ+MP Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cajero BBVA Aeropuerto</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Bancolombia_Terminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Bancolombia_Terminal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4,2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cajero Bancolombia Terminal</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Gran_Plaza_BBVA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Gran_Plaza_BBVA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#cajero"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6246346145935082, -75.60607581276022]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4,7</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A N. 21A-, Cl. 3 Bis #6a14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cajero BBVA Centro Comercial Gran Plaza</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Catedral_Nuestra_Seniora_De_Lourdes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Catedral_Nuestra_Seniora_De_Lourdes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#iglesia"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6129895251787754, -75.61495827263117]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,7</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>721</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra. 14 ##13-35, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Catedral Nuestra Señora De Lourdes</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Centro_Comercial_Gran_Plaza_Florencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Centro_Comercial_Gran_Plaza_Florencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen"/>
+        <untitled-ontology-14:esta rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Gran_Plaza_BBVA"/>
+        <untitled-ontology-14:esta rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Pizzas_Lujan"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6246346145935082, -75.60607581276022]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>4966</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>A N. 21A-, Cl. 3 Bis #6a14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>10:00 - 23:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Centro Comercial Gran Plaza Florencia</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Complejo_Deportivo_Villa_Amazonica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Complejo_Deportivo_Villa_Amazonica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Estadio_Alberto_Buitrago_Hoyos"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Polideportivo_Versalles"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6028684337727437, -75.58503246148572]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>8</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>JC37+3X Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>05:00 - 22:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Complejo Deportivo Villa Amazonica</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Estadio_Alberto_Buitrago_Hoyos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Estadio_Alberto_Buitrago_Hoyos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Polideportivo_Versalles"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6116902128196713, -75.60810662225856]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>3,9</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>763</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra. 13 #N° 7A - 51, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>05:00 - 22:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Estadio Alberto Buitrago Hoyos</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Exito_Florencia_Centro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Exito_Florencia_Centro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6150364954507057, -75.61285495846181]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>1269</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>a 14-100, Cra. 11 ##14-2, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 20:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Éxito Florencia Centro</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Galeria_La_Satelite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Galeria_La_Satelite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#galeria"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.609189327940175, -75.6044470462037]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>420</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 5 #1060 #10a-2 a, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>06:00-15:30</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Galeria La Satelite</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hospedaje_Porvenir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hospedaje_Porvenir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hospedaje"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hospedaje_Puerto_Amor"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6184539127407773, -75.60541231484197]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,6</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>11</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra 5 # 15D - 36, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Hospedaje Porvenir</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hospedaje_Puerto_Amor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hospedaje_Puerto_Amor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hospedaje"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6732920602988, -75.62014204538026]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>122</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Via Neiva</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Hospedaje Puerto Amor</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Andinos_Plaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Andinos_Plaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hotel"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Luna_Azul"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Royal_Plaza"/>
+        <untitled-ontology-14:posee rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_hotel_Andinos"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6188909206597837, -75.612011116291]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>326</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 18 ###9-07, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Hotel Andinos Plaza</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Luna_Azul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Luna_Azul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hotel"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Royal_Plaza"/>
+        <untitled-ontology-14:posee rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar_hotel_Luna"/>
+        <untitled-ontology-14:posee rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Hotel_Luna"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6183332531612622, -75.61179653874473]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>229</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 17 #9-14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Hotel Luna Azul</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Royal_Plaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Hotel_Royal_Plaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#hotel"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.615759367343379, -75.61278359087494]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>146</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra. 11 ##14-64, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Hotel Royal Plaza</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Museo_Caqueta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Museo_Caqueta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#museo"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6136877101883962, -75.61261559831304]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>168</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra 12-105 Carrera 11 #1229, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Museo Caquetá</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_Juan_XXIII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_Juan_XXIII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_Principal_Santander"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_San_Francisco"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.610051515847408, -75.61109227799064]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>68</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 10 ##13-2 a 13-52, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Parque Juan XXIII</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_Principal_Santander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_Principal_Santander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_San_Francisco"/>
+        <untitled-ontology-14:brindan rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#juego_para_niños"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6151872402996237, -75.61333438799555]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,1</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>2280</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 15 #11-1, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Parque Principal Santander</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_San_Francisco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Parque_San_Francisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#parques"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6132941384381192, -75.6145342944038]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>885</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion># a 13-108, Cl. 13 #132, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Parque San Francisco</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Piscina_Balneario_Real_Campestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Piscina_Balneario_Real_Campestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#balneario"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6614373060558396, -75.61247238674707]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,1</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>154</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Via Neiva</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>09:00 - 19:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Piscina Balneario Real Campestre</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Plaza_de_Mercado_La_Concordia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Plaza_de_Mercado_La_Concordia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#galeria"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6163800467899032, -75.61540663723106]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>408</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>06:00-15:30</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Plaza de Mercado La Concordia</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Polideportivo_Versalles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Polideportivo_Versalles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6062698573504033, -75.60295206362302]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4.0</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>92</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cra. 13 #3-53 #3-93 a, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Polideportivo Versalles</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Restaurante_Balneario_Casa_Campesina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Restaurante_Balneario_Casa_Campesina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Restaurante_Guacamayas"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_la_calera_florencia_caqueta"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6499365525358705, -75.61053829284056]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>133</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Via Neiva</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>09:00 - 19:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Restaurante Balneario Casa Campesina</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Restaurante_Guacamayas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Restaurante_Guacamayas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_la_calera_florencia_caqueta"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.620406242376132, -75.61432776869364]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>239</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Cl. 20 ##10-37, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>08:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Guacamayas Restaurante</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Terminal_de_Buses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Terminal_de_Buses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#terminal"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_BBVA_Terminal"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#Cajero_Bancolombia_Terminal"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_Claro"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_movistar"/>
+        <untitled-ontology-14:Ttiene rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Terminal"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4,2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>20</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>24 Horas</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>Terminal de Buses</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_Claro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_Claro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">102</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6:00 - 22:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claro</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_movistar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen_terminal_movistar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#almacen"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">90</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5:00 - 14:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movistar</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar_hotel_Luna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar_hotel_Luna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#bar"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6183332531612622, -75.61179653874473]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">245</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cl. 17 #9-14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14:00 - 5:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Licores SAM</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#juego_para_niños -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#juego_para_niños">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#deporte"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6151872402996237, -75.61333438799555]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">103</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cl. 15 #11-1, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">juegos para niños</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto2"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.5935447295365581, -75.56170368911422]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCQQ+MP Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6:00 - 20:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viaje lleno y contento</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Aeropuerto2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.5935447295365581, -75.56170368911422]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCQQ+MP Morelia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5:00 - 20:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medio Día</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Hotel_Luna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Hotel_Luna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6183332531612622, -75.61179653874473]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cl. 17 #9-14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buenos Dias</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Pizzas_Lujan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Pizzas_Lujan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6246346145935082, -75.60607581276022]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,5</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A N. 21A-, Cl. 3 Bis #6a14, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6:00 - 15:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzas Lujan</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Terminal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_Terminal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6201309077159107, -75.60995336938147]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tv. 6 #2081, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6:00 - 16:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entre y Coma</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_hotel_Andinos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_hotel_Andinos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.615759367343379, -75.61278359087494]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cra. 11 ##14-64, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5:00 -- 14:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comidas Magicas</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_la_calera_florencia_caqueta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante_la_calera_florencia_caqueta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2021/9/untitled-ontology-14#restaurante"/>
+        <untitled-ontology-14:Geo_Json>{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [1.6505386061112213, -75.6076554484773]}</untitled-ontology-14:Geo_Json>
+        <untitled-ontology-14:calificacion>4</untitled-ontology-14:calificacion>
+        <untitled-ontology-14:comentarios>6</untitled-ontology-14:comentarios>
+        <untitled-ontology-14:direccion>km 4 nueva jerusalem, Florencia, Caquetá</untitled-ontology-14:direccion>
+        <untitled-ontology-14:horario>10:00 - 21:00</untitled-ontology-14:horario>
+        <untitled-ontology-14:nombre>restaurante la calera florencia caqueta</untitled-ontology-14:nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
